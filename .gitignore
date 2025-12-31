@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+*.egg-info/
+dist/
+build/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# Data files (too large for GitHub)
+data/creditcard.csv
+*.npy
+
+# Model files (optional - can use Git LFS if needed)
+models/*.pkl
+
+# Results
+results/*.png
+results/*.jpg
+
+# Logs
+logs/
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+*.env
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+```
