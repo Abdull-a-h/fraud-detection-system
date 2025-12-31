@@ -110,11 +110,11 @@ fraud_detection/
 
 ### 1️⃣ Clone the Repository
 
-```bash
+
 git clone https://github.com/Abdull-a-h/fraud-detection-system.git
 cd fraud-detection-system
 
-2️⃣ Create Virtual Environment
+### 2️⃣ Create Virtual Environment
 
 python -m venv venv
 
@@ -126,35 +126,35 @@ source venv/bin/activate
 # Windows
 venv\Scripts\activate
 
-3️⃣ Install Dependencies
+### 3️⃣ Install Dependencies
 
 pip install -r requirements.txt
 
-4️⃣ Download Dataset
+### 4️⃣ Download Dataset
 
 Download from Kaggle – Credit Card Fraud Detection
 
 Place creditcard.csv inside the data/ directory
 
-🧠 Model Training Pipeline
-1️⃣ Preprocess Data
+## 🧠 Model Training Pipeline
+### 1️⃣ Preprocess Data
 
 cd src
 python data_preprocessing.py
 
-2️⃣ Train Models
+### 2️⃣ Train Models
 
 python model_training.py
 
-3️⃣ Evaluate Models
+### 3️⃣ Evaluate Models
 
 python model_evaluation.py
 
-4️⃣ Optimize Threshold (Optional)
+### 4️⃣ Optimize Threshold (Optional)
 
 python threshold_optimization.py
 
-🧪 Model Comparison
+## 🧪 Model Comparison
 Model	Precision	Recall	F1-Score	False Positive Rate	ROC-AUC
 Random Forest	88.51%	78.57%	0.8324	0.02%	0.9726
 XGBoost	35.00%	87.00%	0.4942	0.28%	0.9760
@@ -162,7 +162,7 @@ Logistic Regression	6.00%	92.00%	0.1094	2.56%	0.9698
 
 🏆 Winner: Random Forest with optimized threshold 0.7814
 
-🎯 Threshold Optimization
+## 🎯 Threshold Optimization
 
 The system uses a custom threshold (0.7814) instead of the default 0.5 to achieve:
 
@@ -174,13 +174,13 @@ Optimal F1-score
 
 FRAUD_THRESHOLD = 0.7814
 
-🌐 Running the API
+## 🌐 Running the API
 Option 1: Local Development
 
 cd api
 python app.py
 
-Docker
+Option 2: Docker
 docker build -t fraud-detection-api .
 docker run -d -p 5000:5000 --name fraud-api fraud-detection-api
 
